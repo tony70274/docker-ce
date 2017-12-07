@@ -30,7 +30,7 @@ func newPsCommand(dockerCli command.Cli) *cobra.Command {
 	options := psOptions{filter: opts.NewFilterOpt()}
 
 	cmd := &cobra.Command{
-		Use:   "ps [OPTIONS] SERVICE [SERVICE...]",
+		Use:   "ps [OPTIONS] SERVICE [SERVICE...]  HelloWorld!! Test!! ",
 		Short: "List the tasks of one or more services",
 		Args:  cli.RequiresMinArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

@@ -61,7 +61,7 @@ func NewRunCommand(dockerCli command.Cli) *cobra.Command {
 
 	// Add an explicit help that doesn't have a `-h` to prevent the conflict
 	// with hostname
-	flags.Bool("help", false, "Print usage")
+	flags.Bool("help", false, "Print usage    Test 1234!!")
 
 	command.AddPlatformFlag(flags, &opts.platform)
 	command.AddTrustVerificationFlags(flags)
